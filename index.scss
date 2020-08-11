@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Get rid of this at some point
+img {
+  width: 1000px;
+}
+
+body {
+  max-width: 1300px;
+  margin-left: 6em;
+}
+
+header {
+  width: 100%;
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      font-size: 5em;
+    }
+    li:not(:first-child):before {
+      content: " - ";
+    }
+  }
+}
+
+h1 {
+  font-size: 10em;
+}
+
+.block-1 {
+  position: relative;
+  height: 1500px;
+  img {
+    z-index: -1;
+    position: absolute;
+    top: 6%;
+  }
+}
+
+.block-2 {
+  position: relative;
+  img {
+    z-index: -1;
+    position: absolute;
+    left: 20%;
+  }
+}
